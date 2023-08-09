@@ -175,3 +175,73 @@ nav ul li ul li a:hover{
     font-size: 14px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); 
 }
+
+/* ELEMENTOS REPONSIVE*/
+
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .search input{
+        display: none;
+    }
+    .header_superior{
+        padding: 10px;
+    }
+    .logo-title{
+        width: 200px;
+    }
+    nav > ul {
+        flex-direction: column;
+        background-color: #023877;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+    nav ul li ul{
+        left: 90px;
+    }
+    nav > ul > li:hover ul{
+        top: 50px;
+    }
+    #label__check{
+        display: block;
+    }
+    .icon__menu{
+        display: flex;
+    }
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    
+    }
+}
+
+

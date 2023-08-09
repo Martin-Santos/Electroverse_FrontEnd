@@ -1,0 +1,23 @@
+/* FOOTER */
+footer{
+    background-color: #3A98B9;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer ul{
+    list-style-type: none;
+}
+
+.footer-center ul{
+    align-items: center;
+}
+.footer-center h2{
+    justify-content: center;
+    align-items: center;
+
+}
+
