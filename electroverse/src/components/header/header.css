@@ -1,4 +1,18 @@
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Header Superior*/
+#body{
+    background-color: #FFF1DC;
+    margin: 0 auto;
+    font-family: 'Lato';
+    color: #333;
+}
 header{
     width: 100%;
     position: fixed;
@@ -213,7 +227,7 @@ nav ul li ul li a:hover{
         background-color: #023877;
         position: fixed;
         left: 0;
-        top: 158px;
+        top: 140px;
         width: 100%;
         height: 0px;
         transition: all 300ms ease;

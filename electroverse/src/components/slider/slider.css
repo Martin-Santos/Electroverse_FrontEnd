@@ -1,6 +1,19 @@
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Slider */
 
-
+#body{
+    background-color: #FFF1DC;
+    margin: 0 auto;
+    font-family: 'Lato';
+    color: #333;
+}
 .slider{
     width: 80vw;
     border-radius: 5%;
@@ -38,4 +51,29 @@
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+}
+
+.botonesmain{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.botonesmain button{
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    z-index: 2;
+    box-shadow: 6px 6px 12px #0074c7;
+    
+     
+}
+@media screen and (max-width: 800px){
+    .botonesmain{
+        scale: 60%;
+    }
+
 }

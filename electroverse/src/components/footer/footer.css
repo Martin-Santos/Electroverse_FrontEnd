@@ -1,4 +1,18 @@
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* FOOTER */
+#body{
+    background-color: #FFF1DC;
+    margin: 0 auto;
+    font-family: 'Lato';
+    color: #333;
+}
 footer{
     background-color: #3A98B9;
     position: static;
