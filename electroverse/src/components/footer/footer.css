@@ -1,11 +1,3 @@
-/* Globales */
-*::after,
-*::before,
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /* FOOTER */
 #body{
     background-color: #FFF1DC;
@@ -20,12 +12,21 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    
     
 }
 footer ul{
     list-style-type: none;
 }
-
+.footer-left h1{
+    padding: 10%;
+}
+.footer-center ul li a{
+    text-decoration: none;
+    color: black;
+}
 .footer-center ul{
     align-items: center;
 }
@@ -33,5 +34,14 @@ footer ul{
     justify-content: center;
     align-items: center;
 
+}
+.footer-right ul li a{
+    color: black;
+    text-decoration: none;
+}
+.derechos_reser{
+    background-color: #3A98B9;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 

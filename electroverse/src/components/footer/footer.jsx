@@ -7,16 +7,16 @@ export default function Footer() {
 			<footer>
 				<div class="footer-left">
 					<h1>Electroverse</h1>
-					<p>¡Bienvenido/a a Electroverse! Somos tu destino confiable y apasionado para descubrir las últimas y más emocionantes innovaciones en el mundo de la tecnología.</p>
+					{/* <p>¡Bienvenido/a a Electroverse! Somos tu destino confiable y apasionado para descubrir las últimas y más emocionantes innovaciones en el mundo de la tecnología.</p>
 					<p> nos dedicamos apasionadamente a ofrecerte una amplia gama de productos electrónicos de alta calidad, Desde smartphones elegantes, laptops potentes y </p>
-					<p> computadoras personales hasta dispositivos inteligentes</p>
+					<p> computadoras personales hasta dispositivos inteligentes</p> */}
 				</div>
 				<div class="footer-center">
 					<h2>Social</h2>
 					<ul>
-						<li><a href="">Twitter</a></li>
-						<li><a href="">Instagram</a></li>
-						<li><a href="">Facebook</a></li>
+						<li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+						<li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+						<li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
 					</ul>
 				</div>
 				<div class="footer-right">
@@ -28,7 +28,13 @@ export default function Footer() {
 					</ul>
 				</div>
 				
+				
 			</footer>
+			<div class="derechos_reser"> 
+					<h4>&copy; 2023 <b>Electroverse</b> - All rights reserved.</h4>
+					
+
+			</div>
 		</div>
 
 
