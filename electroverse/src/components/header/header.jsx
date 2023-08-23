@@ -1,5 +1,7 @@
 import './header.css';
-import imglogo from '../../multimedia/imglogo.png'
+import imglogo from '../../multimedia/imglogo.png';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Login from '../user/usuario';
 
 export default function Header() {
     return (
@@ -53,7 +55,7 @@ export default function Header() {
 						</label>
 						<nav>
 							<ul>
-								<li><a href="./index.html">Home</a></li>
+								<li><Link to="home" to={<Login />} /></li>
 								<li><a href="#">TVs</a>
 									<ul>
 										<li><a href="#">Samsung</a></li>

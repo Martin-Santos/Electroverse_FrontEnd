@@ -6,9 +6,17 @@ import Slider from './components/slider/slider'
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Slider></Slider>
-      <Footer></Footer>
+
+      <Router>
+        <Routes>
+          <Route path="/home" element={<>
+            <Header></Header>
+            <Slider></Slider>
+            <Footer></Footer>
+          </>} />
+        </Routes>
+      </Router>
+      
       
       
     </div>

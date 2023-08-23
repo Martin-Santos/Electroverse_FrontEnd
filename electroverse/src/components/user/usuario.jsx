@@ -1,6 +1,6 @@
 import './usuario.css';
 
-export default function Slider() {
+export default function Login() {
     return (
         <section>
             <div class="form-box">
