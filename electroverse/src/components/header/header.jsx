@@ -1,7 +1,6 @@
 import './header.css';
 import imglogo from '../../multimedia/imglogo.png';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Login from '../user/usuario';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -11,12 +10,15 @@ export default function Header() {
 				<div class="header_superior">
 
 					<div class="navbar">
-						<div class="logo-title">
-							<img class="logo" src={imglogo} alt="logo empresa" />
-							<a href="./index.html" >
-							<h1 class="title">ELECTROVERSE</h1>
-							</a>
-						</div>
+						<Link to="/home">
+							<div class="logo-title">
+								<img class="logo" src={imglogo} alt="logo empresa" />
+								
+								<h1 class="title">ELECTROVERSE</h1>
+								
+								
+							</div>
+						</Link>
 					</div>
 
 					<div class="search">
@@ -36,11 +38,11 @@ export default function Header() {
 							</a>
 						</div>
 						<div class="icon-user">
-							<a href="./usuario.html">
+							<Link to="/login">
 								<span class="material-symbols-outlined">
 									person
 								</span>	
-							</a>
+							</Link>
 						</div>	
 					</div>
 					
@@ -55,7 +57,7 @@ export default function Header() {
 						</label>
 						<nav>
 							<ul>
-								<li><Link to="home" to={<Login />} /></li>
+								<li><Link to="/home">home</Link></li>
 								<li><a href="#">TVs</a>
 									<ul>
 										<li><a href="#">Samsung</a></li>
@@ -65,7 +67,7 @@ export default function Header() {
 										<li><a href="#">Philips</a></li>
 									</ul>
 								</li>
-								<li><a href="./moviles.html">Celulares</a>
+								<li><Link to="/moviles">moviles</Link>
 									<ul>
 										<li><a href="#">Samsung</a></li>
 										<li><a href="#">Apple</a></li>

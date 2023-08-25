@@ -23,6 +23,14 @@ footer ul{
 .footer-left h1{
     padding: 10%;
 }
+.footer-left{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer-center{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 .footer-center ul li a{
     text-decoration: none;
     color: black;
@@ -34,6 +42,10 @@ footer ul{
     justify-content: center;
     align-items: center;
 
+}
+.footer-right{
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 .footer-right ul li a{
     color: black;

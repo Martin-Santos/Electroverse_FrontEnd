@@ -1,14 +1,11 @@
-import './slider.css';
+import './moviles.css'; 
 import galaxy_s22 from '../../multimedia/galaxy-s22-recortado.jpg'
 
-export default function moviles() {
+export default function Moviles() {
     return (
         <div id='body'>
             <div class="body">
-
-            
                 <div class="container-items">
-
                     <div class="item">
                         <figure>
                             <img src={galaxy_s22} alt="producto"/>
@@ -70,8 +67,6 @@ export default function moviles() {
                             <p class="price">usd$800</p>
                             <a href="">INFO</a>
                             <button>Añadir al carrito</button>
-
-                    
                         </div>
                     </div>
                 </div>

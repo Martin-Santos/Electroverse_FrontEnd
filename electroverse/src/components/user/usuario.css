@@ -1,5 +1,6 @@
 /* Inicio de sesión */
 section{
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,7 @@ section{
 }
 .form-box{
     position: relative;
-    width: 400px;
+    width: 30%;
     height: 450px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
