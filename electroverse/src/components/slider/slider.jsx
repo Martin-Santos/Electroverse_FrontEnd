@@ -20,6 +20,10 @@ export default function Slider() {
 			<div class="botonesmain">
 				<button>Más Comprados</button>
 			</div>
+			<div class="caontainerMasComprados">
+				
+
+			</div>
 		</div>
 
 

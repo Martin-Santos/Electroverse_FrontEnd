@@ -3,7 +3,7 @@ import './footer.css';
 
 export default function Footer() {
     return (
-		<div id='body'>
+		<div id='Footer'>
 			<footer>
 				<div class="footer-left">
 					<h1>Electroverse</h1>
