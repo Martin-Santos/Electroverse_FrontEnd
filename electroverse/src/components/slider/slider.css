@@ -7,11 +7,11 @@
     color: #333;
 }
 .slider{
-    width: 80vw;
-    border-radius: 5%;
+    max-width: 80vw;
+    border-radius: 20px;
     margin: auto;
     overflow: hidden;
-    padding-top: 15%;
+    margin-top: 30vh;
     
     
     

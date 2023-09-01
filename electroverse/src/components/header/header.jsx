@@ -13,10 +13,7 @@ export default function Header() {
 						<Link to="/home">
 							<div class="logo-title">
 								<img class="logo" src={imglogo} alt="logo empresa" />
-								
-								<h1 class="title">ELECTROVERSE</h1>
-								
-								
+								<h1 class="title">ELECTROVERSE</h1>	
 							</div>
 						</Link>
 					</div>

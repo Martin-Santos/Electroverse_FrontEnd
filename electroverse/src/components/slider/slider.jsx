@@ -7,7 +7,7 @@ import macbook from '../../multimedia/macbook.jpg';
 export default function Slider() {
     return (
         <div id='body'>
-			<div class="slider">
+			<div className="slider">
 
 				<ul>
 					<li><img src={iphone_x} alt=""/></li>
@@ -20,8 +20,24 @@ export default function Slider() {
 			<div class="botonesmain">
 				<button>Más Comprados</button>
 			</div>
-			<div class="caontainerMasComprados">
-				
+			<div class="containerMasComprados">
+					<div class="item">
+						
+						<div class="masComprados">
+							<h2>SAMSUNG</h2>
+						</div>
+					</div>
+
+					<div class="item">
+                        <div class="masComprados">
+                            <h2>SAMSUNG</h2>
+                        </div>
+                    </div>
+					<div class="item">
+                        <div class="masComprados">
+                            <h2>SAMSUNG</h2>
+                        </div>
+                    </div>
 
 			</div>
 		</div>
