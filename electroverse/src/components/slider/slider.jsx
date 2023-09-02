@@ -44,7 +44,7 @@ export default function Slider() {
 					
 
 						<div class="cuadro">
-							<Link to="/moviles">
+							<Link to="/iphone">
 								<div>
 									<div class="masComprados">
 										<h2>APPLE</h2>
@@ -55,7 +55,7 @@ export default function Slider() {
 						</div>
 
 						<div class="cuadro">
-							<Link to="/moviles">
+							<Link to="/xiaomi">
 								<div>
 									<div class="masComprados">
 										<h2>XIAOMI</h2>
