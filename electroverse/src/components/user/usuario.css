@@ -1,15 +1,16 @@
 /* Inicio de sesión */
 section{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
 
-    background: url(../../multimedia/fondo-electroverse-provisorio.jpg)no-repeat;
+    background: url(../../multimedia/fondo_security.jpg)no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 .form-box{
     position: relative;

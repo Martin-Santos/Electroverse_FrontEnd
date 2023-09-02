@@ -2,7 +2,7 @@
 #Footer{
     background-color: #FFF1DC;
     margin: 0 auto;
-    font-family: 'Lato';
+    font-family: 'Bruno Ace', cursive;
     color: #333;
     
 }
@@ -56,5 +56,8 @@ footer ul{
     background-color: #3A98B9;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.derechos_reser h4{
+    font-family: 'Lato';
 }
 

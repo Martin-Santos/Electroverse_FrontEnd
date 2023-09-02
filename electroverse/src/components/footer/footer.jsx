@@ -6,7 +6,7 @@ export default function Footer() {
 		<div id='Footer'>
 			<footer>
 				<div class="footer-left">
-					<h1>Electroverse</h1>
+					<h1>Electroverse®</h1>
 					{/* <p>¡Bienvenido/a a Electroverse! Somos tu destino confiable y apasionado para descubrir las últimas y más emocionantes innovaciones en el mundo de la tecnología.</p>
 					<p> nos dedicamos apasionadamente a ofrecerte una amplia gama de productos electrónicos de alta calidad, Desde smartphones elegantes, laptops potentes y </p>
 					<p> computadoras personales hasta dispositivos inteligentes</p> */}

@@ -66,10 +66,10 @@ export default function Header() {
 								</li>
 								<li><Link to="/moviles">moviles</Link>
 									<ul>
-										<li><a href="#">Samsung</a></li>
-										<li><a href="#">Apple</a></li>
-										<li><a href="#">Xiaomi</a></li>
-										<li><a href="#">Motorola</a></li>
+										<li><Link to="/moviles">Samsung</Link></li>
+										<li><Link to="/iphone">Apple</Link></li>
+										<li><Link to="/xiaomi">Xiaomi</Link></li>
+										<li><a href="#">Realme</a></li>
 										
 									</ul>
 								</li>

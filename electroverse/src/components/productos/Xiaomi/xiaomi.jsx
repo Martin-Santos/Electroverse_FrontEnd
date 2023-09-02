@@ -1,17 +1,17 @@
-import './moviles.css'; 
-import galaxy_s22 from '../../multimedia/galaxy-s22-recortado.jpg'
+import './xiaomi.css'; 
+import xiaomiNote10s from '../../../multimedia/xiaomiNote10S.jpg'
 
-export default function Moviles() {
+export default function Xiaomi() {
     return (
         <div id='bodyMoviles'>
             <div class="body">
                 <div class="container-items">
                     <div class="item">
                         <figure>
-                            <img src={galaxy_s22} alt="producto"/>
+                            <img src={xiaomiNote10s} alt="producto"/>
                         </figure>
                         <div class="info-product">
-                            <h2>SAMSUNG</h2>
+                            <h2>Xiaomi Note 10s</h2>
                             <p class="price">usd$1000</p>
                             <a href="">INFO</a>
                             <button>Añadir al carrito</button>
@@ -21,10 +21,10 @@ export default function Moviles() {
 
                     <div class="item">
                         <figure>
-                            <img src={galaxy_s22} alt="producto"/>
+                            <img src={xiaomiNote10s} alt="producto"/>
                         </figure>
                         <div class="info-product">
-                            <h2>SAMSUNG</h2>
+                            <h2>Xiaomi Note 10s</h2>
                             <p class="price">$80</p>
                             <a href="">INFO</a>
                             <button>Añadir al carrito</button>
@@ -34,10 +34,10 @@ export default function Moviles() {
 
                     <div class="item">
                         <figure>
-                            <img src={galaxy_s22} alt="ipad 8th"/>
+                            <img src={xiaomiNote10s} alt="ipad 8th"/>
                         </figure>
                         <div class="info-product">
-                            <h2>SAMSUNG</h2>
+                            <h2>Xiaomi Note 10s</h2>
                             <p class="price">usd$500</p>
                             <a href="">INFO</a>
                             <button class="button-add-cart">Añadir al carrito</button>
@@ -47,10 +47,10 @@ export default function Moviles() {
 
                     <div class="item">
                         <figure>
-                            <img src={galaxy_s22} alt="Airpods Pro"/>
+                            <img src={xiaomiNote10s} alt="Airpods Pro"/>
                         </figure>
                         <div class="info-product">
-                            <h2>SAMSUNG</h2>
+                            <h2>Xiaomi Note 10s</h2>
                             <p class="price">usd$120</p>
                             <a href="">INFO</a>
                             <button>Añadir al carrito</button>
@@ -60,10 +60,10 @@ export default function Moviles() {
 
                     <div class="item">
                         <figure>
-                            <img src={galaxy_s22} alt="S22"/>
+                            <img src={xiaomiNote10s} alt="S22"/>
                         </figure>
                         <div class="info-product">
-                            <h2>SAMSUNG</h2>
+                            <h2>Xiaomi Note 10s</h2>
                             <p class="price">usd$800</p>
                             <a href="">INFO</a>
                             <button>Añadir al carrito</button>
