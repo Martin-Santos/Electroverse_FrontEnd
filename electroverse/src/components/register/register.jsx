@@ -1,8 +1,9 @@
-import './usuario.css';
+import './register.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Login() {
+export default function Register() {
+
     const [ showPassword, setShowPassword ] = useState(false);
 
     const changePasswordVisibility = (e) => {
@@ -20,25 +21,27 @@ export default function Login() {
             <div class="form-box">
                 <div class="form-value">
                     <form action="" method=''>
-                        <h2 class="login-title">Login</h2>
+                        <h2 class="login-title">Sign Up</h2>
+                        <div class="inputbox">
+                            <input type="name" required/>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility} />
+                            <input type={showPassword ? 'text' : 'password'} required/>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline" onClick={changeConfirmPasswordVisibility} />
+                            <input type={showPassword ? 'text' : 'password'} required/>
+                            <label for="">Repeat Password</label>
+                        </div>
                         <div class="inputbox">
                             <ion-icon name="mail-outline"></ion-icon>
                             <input type="email" required/>
                             <label for="">Email</label>
                         </div>
-                        <div class="inputbox">
-                            <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility} />
-                            <input type="password" required/>
-                            <label for="">Password</label>
-                        </div>
-                        <div class="forget">
-                            <label for=""><input type="checkbox"/>Remember Me <a href="#">Forget Password</a></label>
-                            
-                        </div>
-                        <button class="boton-login">Log in</button>
-                        <div class="register">
-                            <p>Don't have an account? <Link to='/register' >Register now.</Link></p>
-                        </div>
+                        <button class="boton-login">Sign Up</button>
                     </form>
                 </div>
             </div>

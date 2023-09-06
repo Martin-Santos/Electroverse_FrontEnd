@@ -7,36 +7,36 @@ export default function Header() {
 		<div id='body'>
 		
 			<header>
-				<div class="header_superior">
+				<div className="header_superior">
 
-					<div class="navbar">
-						<Link to="/home">
-							<div class="logo-title">
-								<img class="logo" src={imglogo} alt="logo empresa" />
-								<h1 class="title">ELECTROVERSE</h1>	
+					<div className="navbar">
+						<Link to="/home" className="linkTitle">
+							<div className="logo-title">
+								<img className="logo" src={imglogo} alt="logo empresa" />
+								<h1 className="title">ELECTROVERSE</h1>	
 							</div>
 						</Link>
 					</div>
 
-					<div class="search">
+					<div className="search">
 						<input type="search" placeholder="¿Que desea buscar?" />
-						<div class="icon-search">
-							<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+						<div className="icon-search">
+							<a href=""><i className="fa-solid fa-magnifying-glass"></i></a>
 						</div>
 					</div>
 					
 
-					<div class="container-icon">
-						<div class="icon-cart">
+					<div className="container-icon">
+						<div className="icon-cart">
 							<a href="./carrito.html">
-								<span class="material-symbols-outlined">
+								<span className="material-symbols-outlined">
 									shopping_cart
 								</span>
 							</a>
 						</div>
-						<div class="icon-user">
+						<div className="icon-user">
 							<Link to="/login">
-								<span class="material-symbols-outlined">
+								<span className="material-symbols-outlined">
 									person
 								</span>	
 							</Link>
@@ -46,11 +46,11 @@ export default function Header() {
 				</div>
 				
 
-				<div class="container__menu">
-					<div class="menu">
+				<div className="container__menu">
+					<div className="menu">
 						<input type="checkbox" id="check__menu"/>
 						<label id="#label__check" for="check__menu">
-							<i class="fa-solid fa-bars icon__menu" ></i>
+							<i className="fa-solid fa-bars icon__menu" ></i>
 						</label>
 						<nav>
 							<ul>

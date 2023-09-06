@@ -7,6 +7,7 @@ import Login from './components/user/usuario';
 import Xiaomi from './components/productos/Xiaomi/xiaomi';
 import Moviles from './components/productos/moviles';
 import Iphone from './components/productos/Iphone/iphone';
+import Register from './components/register/register'
 
 
 function App() {
@@ -41,6 +42,12 @@ function App() {
           <Route path="/iphone" element={<>
             <Header />
             <Iphone />
+            <Footer />
+            
+          </>} />
+          <Route path="/register" element={<>
+            <Header />
+            <Register />
             <Footer />
             
           </>} />

@@ -32,7 +32,7 @@ export default function Slider() {
 				<div class="containerMasComprados">
 					
 						<div class="cuadro">
-							<Link to="/moviles">
+							<Link to="/moviles" className="linkTitle">
 								<div>
 									<div class="masComprados">
 										<h2>SAMSUNG</h2>
@@ -44,7 +44,7 @@ export default function Slider() {
 					
 
 						<div class="cuadro">
-							<Link to="/iphone">
+							<Link to="/iphone" className="linkTitle">
 								<div>
 									<div class="masComprados">
 										<h2>APPLE</h2>
@@ -55,7 +55,7 @@ export default function Slider() {
 						</div>
 
 						<div class="cuadro">
-							<Link to="/xiaomi">
+							<Link to="/xiaomi" className="linkTitle">
 								<div>
 									<div class="masComprados">
 										<h2>XIAOMI</h2>
@@ -66,7 +66,7 @@ export default function Slider() {
 						</div>
 
 						<div class="cuadro">
-							<Link to="/moviles">
+							<Link to="/moviles" className="linkTitle">
 								<div>
 									<div class="masComprados">
 										<h2>REALME</h2>
@@ -84,7 +84,7 @@ export default function Slider() {
 
 				<div className='itemsOfertas'>
 					<div className='itemOfertas'>
-						<Link to="/moviles">
+						<Link to="/moviles" className="linkTitle">
 							<figure>
 								<img src={samsungS22} alt="" />
 							</figure>
@@ -95,7 +95,7 @@ export default function Slider() {
 					</div>
 					
 					<div className='itemOfertas'>
-						<Link to='/iphone'>
+						<Link to='/iphone' className="linkTitle">
 							<figure>
 								<img src={iphone12} alt="" />
 							</figure>
@@ -106,7 +106,7 @@ export default function Slider() {
 					</div>
 
 					<div className='itemOfertas'>
-						<Link to='/xiaomi'>
+						<Link to='/xiaomi' className="linkTitle">
 							<figure>
 								<img src={xiaomi10pro} alt="" />
 							</figure>

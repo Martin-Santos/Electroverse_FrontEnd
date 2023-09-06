@@ -55,6 +55,9 @@ header{
     text-decoration: none;
     
 }
+.linkTitle {
+    text-decoration: none;
+}
 .search{
     display: flex;
     border-radius: 10%;
