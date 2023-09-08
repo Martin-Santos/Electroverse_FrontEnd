@@ -11,7 +11,7 @@
     border-radius: 20px;
     margin: auto;
     overflow: hidden;
-    margin-top: 20vh;
+    margin-top: 30vh;
     
     
     
@@ -82,7 +82,7 @@
     grid-template-rows: 200px 200px;
     gap: 20px;
     padding-bottom: 5%;
-    grid-row-gap: 220px;
+    grid-row-gap: 20vh;
 }
 .cuadro{
     align-self: center;

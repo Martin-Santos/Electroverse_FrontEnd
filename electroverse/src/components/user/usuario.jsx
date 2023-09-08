@@ -10,11 +10,6 @@ export default function Login() {
         console.log("ENTRO AL CHANGE")
         setShowPassword(!showPassword);
     };
-    const changeConfirmPasswordVisibility = (b) => {
-        b.preventDefault();
-        console.log("ENTRO AL CHANGE")
-        setShowPassword(!showPassword);
-    };
     return (
         <section>
             <div class="form-box">
@@ -23,13 +18,13 @@ export default function Login() {
                         <h2 class="login-title">Login</h2>
                         <div class="inputbox">
                             <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" required/>
+                            <input type="email" name="email" required/>
                             <label for="">Email</label>
                         </div>
                         <div class="inputbox">
                             <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility} />
-                            <input type="password" required/>
-                            <label for="">Password</label>
+                            <input name="password" type="password"  required/>
+                            <label for="password">Password</label>
                         </div>
                         <div class="forget">
                             <label for=""><input type="checkbox"/>Remember Me <a href="#">Forget Password</a></label>
