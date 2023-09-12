@@ -1,78 +1,85 @@
-import './moviles.css'; 
-import galaxy_s22 from '../../multimedia/galaxy-s22-recortado.jpg'
+import { useContext } from "react";
+import { dataContext } from "../Context/DataContext";
+import "./products.css";
+import "./moviles.css";
+import galaxy_s22 from "../../multimedia/galaxy-s22-recortado.jpg";
+export const Moviles = () => {
+    const {data, buyProducts} = useContext(dataContext);
 
-export default function Moviles() {
-    return (
-        <div id='bodyMoviles'>
-            <div class="body">
-                <div class="container-items">
-                    <div class="item">
-                        <figure>
-                            <img src={galaxy_s22} alt="producto"/>
-                        </figure>
-                        <div class="info-product">
-                            <h2>SAMSUNG</h2>
-                            <p class="price">usd$1000</p>
-                            <a href="">INFO</a>
-                            <button>Añadir al carrito</button>
+    return data.map((product) => {
+        return (
+            <div id='bodyMoviles'>
+                <div class="body">
+                    <div class="container-items">
+
+                        <div className="item" key={product.id}>
+                            <figure>
+                                <img src={product.img} alt="img-product-card"/>
+                            </figure>
+                            <div class="info-product">
+                                <h3>{product.name}</h3>
+                                <h4>{product.price}$</h4>
+                                <a href="">INFO</a>
+                                <button onClick={() => buyProducts(product)}>Buy</button>
+                            </div>
                         </div>
-                    </div>
-                    
+                        
 
-                    <div class="item">
-                        <figure>
-                            <img src={galaxy_s22} alt="producto"/>
-                        </figure>
-                        <div class="info-product">
-                            <h2>SAMSUNG</h2>
-                            <p class="price">$80</p>
-                            <a href="">INFO</a>
-                            <button>Añadir al carrito</button>
+                        <div className="item" key={product.id}>
+                            <figure>
+                                <img src={product.img} alt="img-product-card"/>
+                            </figure>
+                            <div class="info-product">
+                                <h3>{product.name}</h3>
+                                <h4>{product.price}$</h4>
+                                <a href="">INFO</a>
+                                <button onClick={() => buyProducts(product)}>Buy</button>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <div class="item">
-                        <figure>
-                            <img src={galaxy_s22} alt="ipad 8th"/>
-                        </figure>
-                        <div class="info-product">
-                            <h2>SAMSUNG</h2>
-                            <p class="price">usd$500</p>
-                            <a href="">INFO</a>
-                            <button class="button-add-cart">Añadir al carrito</button>
+                        <div className="item" key={product.id}>
+                            <figure>
+                                <img src={product.img} alt="img-product-card"/>
+                            </figure>
+                            <div class="info-product">
+                                <h3>{product.name}</h3>
+                                <h4>{product.price}$</h4>
+                                <a href="">INFO</a>
+                                <button onClick={() => buyProducts(product)}>Buy</button>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <div class="item">
-                        <figure>
-                            <img src={galaxy_s22} alt="Airpods Pro"/>
-                        </figure>
-                        <div class="info-product">
-                            <h2>SAMSUNG</h2>
-                            <p class="price">usd$120</p>
-                            <a href="">INFO</a>
-                            <button>Añadir al carrito</button>
+                        <div className="item" key={product.id}>
+                            <figure>
+                                <img src={product.img} alt="img-product-card"/>
+                            </figure>
+                            <div class="info-product">
+                                <h3>{product.name}</h3>
+                                <h4>{product.price}$</h4>
+                                <a href="">INFO</a>
+                                <button onClick={() => buyProducts(product)}>Buy</button>
+                            </div>
                         </div>
-                    </div>
 
 
-                    <div class="item">
-                        <figure>
-                            <img src={galaxy_s22} alt="S22"/>
-                        </figure>
-                        <div class="info-product">
-                            <h2>SAMSUNG</h2>
-                            <p class="price">usd$800</p>
-                            <a href="">INFO</a>
-                            <button>Añadir al carrito</button>
+                        <div className="item" key={product.id}>
+                            <figure>
+                                <img src={product.img} alt="img-product-card"/>
+                            </figure>
+                            <div class="info-product">
+                                <h3>{product.name}</h3>
+                                <h4>{product.price}$</h4>
+                                <a href="">INFO</a>
+                                <button onClick={() => buyProducts(product)}>Buy</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        );
+    });
+};
 
-
-    )
-}
+export default Moviles;

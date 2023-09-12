@@ -1,8 +1,13 @@
 import './header.css';
 import imglogo from '../../multimedia/imglogo.png';
 import { Link } from 'react-router-dom';
+import TotalItems from '../CartContent/TotalItems';
+import { useContext } from "react";
+import { dataContext } from "../Context/DataContext";
+import CartTotal from '../CartContent/CartTotal';
 
 export default function Header() {
+	const { cart } = useContext(dataContext);
     return (
 		<div id='body'>
 		
@@ -10,7 +15,7 @@ export default function Header() {
 				<div className="header_superior">
 
 					<div className="navbar">
-						<Link to="/home" className="linkTitle">
+						<Link to="/" className="linkTitle">
 							<div className="logo-title">
 								<img className="logo" src={imglogo} alt="logo empresa" />
 								<h1 className="title">ELECTROVERSE</h1>	
@@ -28,11 +33,12 @@ export default function Header() {
 
 					<div className="container-icon">
 						<div className="icon-cart">
-							<a href="./carrito.html">
+							<Link to="/cart">
 								<span className="material-symbols-outlined">
 									shopping_cart
 								</span>
-							</a>
+								{cart.length > 0 ? <TotalItems/> : null}
+							</Link>
 						</div>
 						<div className="icon-user">
 							<Link to="/login">
@@ -54,7 +60,7 @@ export default function Header() {
 						</label>
 						<nav>
 							<ul>
-								<li><Link to="/home">home</Link></li>
+								<li><Link to="/">home</Link></li>
 								<li><a href="#">TVs</a>
 									<ul>
 										<li><a href="#">Samsung</a></li>

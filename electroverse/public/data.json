@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name": "SAMSUNG S22+",
+        "price": 80,
+        "img": "C:/Users/Usuario/Desktop/Proyectos_web/Electroverse_FrontEnd/electroverse/src/multimedia/iphone_13_pro_max_img_cart.png",
+        "quanty": 1
+    },
+    {
+        "id":2,
+        "name": "IPHONE 13 PRO MAX",
+        "price": 100,
+        "img": "../../multimedia/iphone_13_pro_max_img_cart.png",
+        "quanty": 1
+    },
+    {
+        "id":3,
+        "name": "XIAOMI NOTE 10S",
+        "price": 100,
+        "img": "../src/multimedia/iphone_13_pro_max_img_cart.png",
+        "quanty": 1
+    }
+]

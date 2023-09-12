@@ -1,0 +1,60 @@
+.cartContent {
+    font-family: 'Bruno Ace', cursive;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.cartContent > img {
+    height: 120px;
+    width: 100px;
+    text-align: center;
+}
+.cartTotal {
+    text-align: center;
+    font-family: 'Bruno Ace', cursive;
+}
+
+.cart-empty-message{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* counter-button */
+.counter-button{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* delete-button */
+.cart-delete-button{
+    cursor: pointer;
+}
+
+/* Titulo */
+
+.title-cart{
+    margin-top: 17vh;
+    margin-bottom: 6vh;
+    font-family: 'Bruno Ace', cursive;
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #0074c7;
+    background-color: #4a91c4;
+}
+
+/* Empty Cart */
+
+.empty-cart img{
+    height: 200px;
+    width: 200px;
+}
+.empty-message h4{
+    color: grey;
+}

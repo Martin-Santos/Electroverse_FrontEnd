@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Login() {
     const [ showPassword, setShowPassword ] = useState(false);
 
-    const changePasswordVisibility = (e) => {
+    const changePasswordVisibility1 = (e) => {
         e.preventDefault();
         console.log("ENTRO AL CHANGE")
         setShowPassword(!showPassword);
@@ -22,7 +22,7 @@ export default function Login() {
                             <label for="">Email</label>
                         </div>
                         <div class="inputbox">
-                            <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility} />
+                            <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility1} />
                             <input name="password" type="password"  required/>
                             <label for="password">Password</label>
                         </div>
@@ -32,7 +32,7 @@ export default function Login() {
                         </div>
                         <button class="boton-login">Log in</button>
                         <div class="register">
-                            <p>Don't have an account? <Link to='/register' >Register now.</Link></p>
+                            <p>No eres miembro? <Link to='/register' >Regístrate ahora.</Link></p>
                         </div>
                     </form>
                 </div>

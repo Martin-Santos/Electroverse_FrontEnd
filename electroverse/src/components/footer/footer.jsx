@@ -31,7 +31,7 @@ export default function Footer() {
 				
 			</footer>
 			<div class="derechos_reser"> 
-					<h4>&copy; 2023 <b>Electroverse</b> - All rights reserved.</h4>
+					<h4>&copy; 2020 - 2023 <b>Electroverse</b> - All rights reserved.</h4>
 					
 
 			</div>

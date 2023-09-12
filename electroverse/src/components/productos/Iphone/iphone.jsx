@@ -1,6 +1,6 @@
 import './iphone.css'; 
 import iphone13ProMax from '../../../multimedia/iphone13ProMax.jpg'
-
+import { useContext } from 'react';
 export default function Iphone() {
     return (
         <div id='bodyMoviles'>
