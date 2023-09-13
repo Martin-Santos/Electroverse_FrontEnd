@@ -3,8 +3,11 @@ import { dataContext } from "../Context/DataContext";
 import "./products.css";
 import "./moviles.css";
 import galaxy_s22 from "../../multimedia/galaxy-s22-recortado.jpg";
+
+
 export const Moviles = () => {
     const {data, buyProducts} = useContext(dataContext);
+    console.log(data[0].price)
 
     return data.map((product) => {
         return (
@@ -25,7 +28,7 @@ export const Moviles = () => {
                         </div>
                         
 
-                        <div className="item" key={product.id}>
+                        {/* <div className="item" key={product.id}>
                             <figure>
                                 <img src={product.img} alt="img-product-card"/>
                             </figure>
@@ -74,7 +77,7 @@ export const Moviles = () => {
                                 <a href="">INFO</a>
                                 <button onClick={() => buyProducts(product)}>Buy</button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import CartTotal from "./CartTotal";
 import Header from "../header/header";
 import TitleCart from "./CartTitle";
 import  EmptyCartImg from "./EmptyCart"
+import Footer from '../footer/footer';
 import "./CartContent.css";
 
 const CartContent = () => {
@@ -23,6 +24,7 @@ const CartContent = () => {
             
             <EmptyCartImg/>
         )}
+        <Footer/>
         </>
     )
 };

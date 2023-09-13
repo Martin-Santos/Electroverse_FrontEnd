@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function EmptyCartImg() {
     return (
-        <div>
+        <div className="empty-cart-page">
             <h2 className="cart-empty-message">Carrito Vacío</h2>
             <div className="empty-cart">
                 <img src={emptyCartImg} alt="empty-cart-image"/>

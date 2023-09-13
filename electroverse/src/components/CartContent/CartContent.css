@@ -35,7 +35,7 @@
 /* Titulo */
 
 .title-cart{
-    margin-top: 17vh;
+    margin-top: 24vh;
     margin-bottom: 6vh;
     font-family: 'Bruno Ace', cursive;
     padding: 20px;
@@ -50,11 +50,29 @@
 }
 
 /* Empty Cart */
-
+.empty-cart-page{
+    margin-bottom: 20vh;
+}
 .empty-cart img{
     height: 200px;
     width: 200px;
 }
 .empty-message h4{
     color: grey;
+}
+
+/* Total */
+.cartTotal{
+    margin-bottom: 20vh;
+}
+.cartTotal h3{
+    padding-bottom: 20px;
+}
+.cartTotal button{
+    font-family: 'Bruno Ace', cursive;
+    border-radius: 8px;
+    background-color: #18479c;
+    color: #fff;
+    padding: 15px 200px;
+    cursor: pointer;
 }
