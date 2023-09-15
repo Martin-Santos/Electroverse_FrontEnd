@@ -4,12 +4,24 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 30px;
+    padding-top: 1vh;
+}
+.cartContent .name{
+    padding-top: 50px;
+}
+.cartContent .price{
+    padding-top: 50px;
+}
+.cartContent .cart-delete-button{
+    padding-top: 50px;
+}
+.cartContent .cantidad{
+    padding-top: 30px;
 }
 
 .cartContent > img {
     height: 120px;
-    width: 100px;
-    text-align: center;
+    width: 110px;
 }
 .cartTotal {
     text-align: center;
@@ -36,12 +48,10 @@
 
 .title-cart{
     margin-top: 24vh;
-    margin-bottom: 6vh;
     font-family: 'Bruno Ace', cursive;
     padding: 20px;
     font-size: 15px;
     border: none;
-    cursor: pointer;
     position: relative;
     left: 0%;
     z-index: 1;

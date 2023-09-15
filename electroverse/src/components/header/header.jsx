@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import TotalItems from '../CartContent/TotalItems';
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
-import CartTotal from '../CartContent/CartTotal';
 
 export default function Header() {
 	const { cart } = useContext(dataContext);
@@ -80,8 +79,8 @@ export default function Header() {
 									</ul>
 								</li>
 								<li><a href="#">Electrodomesticos</a></li>
-								<li><a href="#">Soporte</a></li>
-								<li><a href="#">Ayuda</a></li>
+								{/* <li><a href="#">Soporte</a></li>
+								<li><a href="#">Ayuda</a></li> */}
 							</ul>
 						</nav>
 

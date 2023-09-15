@@ -2,12 +2,10 @@ import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
 import "./products.css";
 import "./moviles.css";
-import galaxy_s22 from "../../multimedia/galaxy-s22-recortado.jpg";
 
 
 export const Moviles = () => {
     const {data, buyProducts} = useContext(dataContext);
-    console.log(data[0].price)
 
     return data.map((product) => {
         return (

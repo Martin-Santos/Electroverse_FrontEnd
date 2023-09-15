@@ -24,7 +24,7 @@ export default function Footer() {
 					<ul>
 						<li><a href="">Soporte</a></li>
 						<li><a href="">Contáctenos</a></li>
-						<li><a href="">2613463748</a></li>
+						<li><a href="">Tel: 2613463748</a></li>
 					</ul>
 				</div>
 				

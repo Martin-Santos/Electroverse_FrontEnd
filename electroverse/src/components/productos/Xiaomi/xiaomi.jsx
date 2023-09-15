@@ -1,6 +1,5 @@
 import './xiaomi.css'; 
 import xiaomiNote10s from '../../../multimedia/xiaomiNote10S.jpg'
-import { useContext } from 'react';
 
 export default function Xiaomi() {
     return (
