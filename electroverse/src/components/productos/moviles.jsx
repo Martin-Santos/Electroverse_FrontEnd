@@ -21,7 +21,7 @@ export const Moviles = () => {
                                 <h3>{product.name}</h3>
                                 <h4>{product.price}$</h4>
                                 <a href="">INFO</a>
-                                <button onClick={() => buyProducts(product)}>Buy</button>
+                                <button onClick={() => buyProducts(product)}>Agregar al carrito</button>
                             </div>
                         </div>
                         

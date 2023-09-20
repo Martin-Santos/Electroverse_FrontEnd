@@ -60,7 +60,7 @@ export default function Header() {
 						<nav>
 							<ul>
 								<li><Link to="/">home</Link></li>
-								<li><a href="#">TVs</a>
+								<li><Link to="/moviles">TVs</Link>
 									<ul>
 										<li><a href="#">Samsung</a></li>
 										<li><a href="#">Sony</a></li>
@@ -69,7 +69,7 @@ export default function Header() {
 										<li><a href="#">Philips</a></li>
 									</ul>
 								</li>
-								<li><Link to="/moviles">moviles</Link>
+								<li><Link to="/moviles">Productos</Link>
 									<ul>
 										<li><Link to="/moviles">Samsung</Link></li>
 										<li><Link to="/iphone">Apple</Link></li>

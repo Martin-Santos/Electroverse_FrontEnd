@@ -6,7 +6,7 @@ export default function Xiaomi() {
         <div id='bodyMoviles'>
             <div class="body">
                 <div class="container-items">
-                    <div class="item">
+                    <div class="item-xiaomi">
                         <figure>
                             <img src={xiaomiNote10s} alt="producto"/>
                         </figure>
@@ -19,7 +19,7 @@ export default function Xiaomi() {
                     </div>
                     
 
-                    <div class="item">
+                    <div class="item-xiaomi">
                         <figure>
                             <img src={xiaomiNote10s} alt="producto"/>
                         </figure>
@@ -32,7 +32,7 @@ export default function Xiaomi() {
                     </div>
 
 
-                    <div class="item">
+                    <div class="item-xiaomi">
                         <figure>
                             <img src={xiaomiNote10s} alt="ipad 8th"/>
                         </figure>
@@ -45,7 +45,7 @@ export default function Xiaomi() {
                     </div>
 
 
-                    <div class="item">
+                    <div class="item-xiaomi">
                         <figure>
                             <img src={xiaomiNote10s} alt="Airpods Pro"/>
                         </figure>
@@ -58,7 +58,7 @@ export default function Xiaomi() {
                     </div>
 
 
-                    <div class="item">
+                    <div class="item-xiaomi">
                         <figure>
                             <img src={xiaomiNote10s} alt="S22"/>
                         </figure>

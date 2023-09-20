@@ -6,7 +6,7 @@ export default function Iphone() {
         <div id='bodyMoviles'>
             <div class="body">
                 <div class="container-items">
-                    <div class="item">
+                    <div class="item-iphone">
                         <figure>
                             <img src={iphone13ProMax} alt="producto"/>
                         </figure>
@@ -19,7 +19,7 @@ export default function Iphone() {
                     </div>
                     
 
-                    <div class="item">
+                    <div class="item-iphone">
                         <figure>
                             <img src={iphone13ProMax} alt="producto"/>
                         </figure>
@@ -32,7 +32,7 @@ export default function Iphone() {
                     </div>
 
 
-                    <div class="item">
+                    <div class="item-iphone">
                         <figure>
                             <img src={iphone13ProMax} alt="ipad 8th"/>
                         </figure>
@@ -45,7 +45,7 @@ export default function Iphone() {
                     </div>
 
 
-                    <div class="item">
+                    <div class="item-iphone">
                         <figure>
                             <img src={iphone13ProMax} alt="Airpods Pro"/>
                         </figure>
@@ -58,7 +58,7 @@ export default function Iphone() {
                     </div>
 
 
-                    <div class="item">
+                    <div class="item-iphone">
                         <figure>
                             <img src={iphone13ProMax} alt="S22"/>
                         </figure>

@@ -2,7 +2,7 @@
 #body{
     background-color: #FFF1DC;
     margin: 0 auto;
-    font-family: 'Lato';
+    font-family: 'Bruno Ace', cursive;
     color: #333;
 }
 header{
@@ -29,6 +29,9 @@ header{
 }
 .icon-user{
     color: #FFF;
+}
+.icon-cart a{
+    text-decoration: none;
 }
 
 .logo-title{

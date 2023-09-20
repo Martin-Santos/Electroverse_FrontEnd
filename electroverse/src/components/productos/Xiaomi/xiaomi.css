@@ -18,28 +18,31 @@
     
 }
 
-.item{
+.item-xiaomi{
     border-radius: 10px;
+    border: solid black 1px;
 }
 
-.item:hover{
+.item-xiaomi:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     z-index: 1;
 }
 
-.item img{
+.item-xiaomi img{
     width: 100%;
     height: 300px;
     object-fit: cover;
     transition: all .5s;
+    border-radius: 10px;
 }
 
-.item figure{
+.item-xiaomi figure{
     overflow: hidden;
+    border-radius: 10px;
 }
 
-.item:hover img{
-    transform: scale(1.2);
+.item-xiaomi:hover img{
+    transform: scale(1.1); 
 }
 .info-product{
     padding: 15px 30px;
