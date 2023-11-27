@@ -10,7 +10,7 @@ export const Moviles = () => {
     return data.map((product) => {
         return (
             <div id='bodyMoviles'>
-                <div class="body">
+                <div class="body-items">
                     <div class="container-items">
 
                         <div className="item" key={product.id}>

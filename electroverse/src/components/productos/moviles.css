@@ -2,15 +2,16 @@
     margin: 0 auto;
     color: #333;
 }
-.body{
+.body-items{
     margin: auto;
+    margin-top: 10vh;
     margin-top: 2%;
     align-items: center;
     max-width: 80vw;
     font-family: 'Bruno Ace', cursive;
 }
 .container-items{
-    margin-top: 10vh;
+   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
