@@ -3,7 +3,6 @@ import { useState } from 'react';
 import axios from 'axios';
 
 export default function Register() {
-
     const [ showPassword, setShowPassword ] = useState(false);
 
     const changePasswordVisibility = (e) => {
@@ -15,53 +14,73 @@ export default function Register() {
         setShowPassword(!showPassword);
     };
 
-    const [name, nombre]=useState("")
-    const [password, contraseña] =useState("")
-    const [email, correoElectronico]=useState("")
-    const [repeatPassword, repetirContraseña] =useState("")
-    const registro = async (e) =>{
-        e.preventDefault()
-        if (password === repeatPassword){
-            try {
-                await axios.post("http://localhost:8080/register",{email,password,name})
-                alert("cuenta creada exitosamente")
-                
-            } catch (error) {
-                alert("no se pudo crear la cuenta")
-                
-            }
+    const [formData, setForm] = useState({
+        usuario: "",
+        email: "",
+        password: "",
+        password2: ""
+      });
+    
+      const handleChange = (e) => {
+        setForm({
+          ...formData,
+          [e.target.name]: e.target.value
+        });
+      };
+    
+      const handleRegister = async (e) => {
+        e.preventDefault();
+    
+        if (formData.password !== formData.password2) {
+          alert("Las contrasenas deben ser coincidentes");
+        } else {
+          try {
+            await axios.post('http://localhost:8080/register', {
+              formData
+            });
+      
+            alert("Usuario registrado exitosamente");
+          } catch (error) {
+            alert("Erro al registrar al usuario");
+            console.log("Error al registrar el usuario: ", error);
+          }  
         }
-        else{
-            alert("las contraseñas no son iguales")
-        }
-    }
+      };
+    
+      const formStyle = {
+        height: '85%',
+      };
+    
+      const imageStyle = {
+        height: '70%',
+      };
 
     return (
         <section>
             <div class="form-box">
                 <div class="form-value">
-                    <form action="" method=''>
+                    <form action="http://localhost:3000/" method=''>
                         <h2 class="login-title">Sign Up</h2>
                         <div class="inputbox">
-                            <input type="name" id="nombre" name="nombre" value ={name} onChange={(e) => nombre (e.target.value)} required/>
+                            <input type="name" id="nombre" name="usuario" onChange={handleChange} required/>
                             <label for="">Name</label>
                         </div>
                         <div class="inputbox">
                             <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility} />
-                            <input type={showPassword ? 'text' : 'password'}  id="contrasena" name="contrasena" value ={password} onChange={(e) => contraseña (e.target.value)} required/>
+                            <input type={showPassword ? 'text' : 'password'}  id="contrasena" name="password"  onChange={handleChange} required/>
                             <label for="">Password</label>
                         </div>
                         <div class="inputbox">
                             <ion-icon name="lock-closed-outline" onClick={changeConfirmPasswordVisibility} />
-                            <input type={showPassword ? 'text' : 'password'} id="repetir-contrasena" name="repetir-contrasena" value ={repeatPassword} onChange={(e) => repetirContraseña (e.target.value)} required/>
+                            <input type={showPassword ? 'text' : 'password'} id="repetir-contrasena" name="password2"  onChange={handleChange} required/>
                             <label for="">Repeat Password</label>
                         </div>
                         <div class="inputbox">
                             <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" id="email" name="email" value ={email} onChange={(e) => correoElectronico (e.target.value)}  required/>
+                            <input type="email" id="email" name="email" onChange={handleChange} required/>
                             <label for="">Email</label>
                         </div>
-                        <button class="boton-login" type="submit" onClick = {registro}>Sign Up</button>
+                        <button class="boton-login" type="submit" onClick={handleRegister}>Sign Up</button>
                     </form>
                 </div>
             </div>
