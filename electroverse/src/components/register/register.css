@@ -104,11 +104,14 @@ input:valid ~ label{
     text-align: center;
     margin: 25px 0 10px;
 }
-.register p a{
+form p{
+    margin-bottom: 10px;
+}
+form p a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
-.register p a:hover{
+form p a:hover{
     text-decoration: underline;
 }

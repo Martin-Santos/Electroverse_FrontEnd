@@ -1,5 +1,6 @@
 import './register.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Register() {
@@ -32,16 +33,16 @@ export default function Register() {
         e.preventDefault();
     
         if (formData.password !== formData.password2) {
-          alert("Las contrasenas deben ser coincidentes");
+          alert("Las contraseñas tienen que coincidir");
         } else {
           try {
             await axios.post('http://localhost:8080/register', {
               formData
             });
       
-            alert("Usuario registrado exitosamente");
+            alert("Usuario registrado con éxito");
           } catch (error) {
-            alert("Erro al registrar al usuario");
+            alert("Error el usuario ya existe");
             console.log("Error al registrar el usuario: ", error);
           }  
         }
@@ -80,7 +81,8 @@ export default function Register() {
                             <input type="email" id="email" name="email" onChange={handleChange} required/>
                             <label for="">Email</label>
                         </div>
-                        <button class="boton-login" type="submit" onClick={handleRegister}>Sign Up</button>
+                        <p><Link to='/login' >Volver al Login</Link></p>
+                        <button class="boton-login" type="submit" onClick={handleRegister}>Regístrate</button>
                     </form>
                 </div>
             </div>

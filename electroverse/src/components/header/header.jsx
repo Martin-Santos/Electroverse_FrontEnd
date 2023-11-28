@@ -78,7 +78,7 @@ export default function Header() {
 										
 									</ul>
 								</li>
-								<li><a href="#">Electrodomesticos</a></li>
+								<li><Link to="/moviles">Electrodomesticos</Link></li>
 								{/* <li><a href="#">Soporte</a></li>
 								<li><a href="#">Ayuda</a></li> */}
 							</ul>

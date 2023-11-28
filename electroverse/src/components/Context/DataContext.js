@@ -8,7 +8,7 @@ const DataProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
     useEffect(()=>{
-        axios("data.json").then((res) => setData(res.data));
+        axios("http://localhost:8080/products").then((res) => setData(res.data));
     },[]);
 
     const buyProducts = (product) => {

@@ -28,7 +28,7 @@ export default function Login() {
 
         alert("Login exitoso");
         } catch (error) {
-        alert("Login fallido");
+        alert("El email o la contraseña son incorrectos");
         console.log("Error al ingresar: ", error);
         }
     };
@@ -38,11 +38,18 @@ export default function Login() {
 
 
 
-    const [ showPassword, setShowPassword ] = useState(false);
+    // const [ showPassword, setShowPassword ] = useState(false);
 
-    const changePasswordVisibility1 = (e) => {
+    // const changePasswordVisibility1 = (e) => {
+    //     e.preventDefault();
+    //     setShowPassword(!showPassword);
+    // };
+    const [passwordType, setPasswordType] = useState("password");
+
+    const showPassword = (e) => {
         e.preventDefault();
-        setShowPassword(!showPassword);
+
+        passwordType === "text" ? setPasswordType("password") : setPasswordType("text");
     };
     return (
         <section>
@@ -56,7 +63,7 @@ export default function Login() {
                             <label for="">Email</label>
                         </div>
                         <div class="inputbox">
-                            <ion-icon name="lock-closed-outline" onClick={changePasswordVisibility1} />
+                            <ion-icon name="lock-closed-outline" onClick={showPassword} />
                             <input name="password" type="password" value ={password} onChange={(e) => contraseña (e.target.value)}  required/>
                             <label for="password">Password</label>
                         </div>
@@ -64,7 +71,7 @@ export default function Login() {
                             <label for=""><input type="checkbox"/>Remember Me <a href="#">Forget Password</a></label>
                             
                         </div>
-                        <button class="boton-login" onClick={handleRegister}>Log in</button>
+                        <button class="boton-login" onClick={handleRegister}>Iniciar Sesión</button>
                         <div class="register">
                             <p>No eres miembro? <Link to='/register' >Regístrate ahora.</Link></p>
                         </div>
