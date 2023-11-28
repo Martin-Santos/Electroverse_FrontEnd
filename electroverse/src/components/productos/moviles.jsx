@@ -23,82 +23,34 @@ export const Moviles = () => {
 
         fetchData();
     }, []);
-    console.log(data1)
 
-    return data1["products"].map((product) => {
-        return (
-            <div id='bodyMoviles'>
-                <div class="body-items">
-                    <div class="container-items">
-
-                        <div className="item" key={product.id}>
-                            <figure>
-                                <img src={product.img} alt="img-product-card"/>
-                            </figure>
-                            <div class="info-product">
-                                <h3>{product.name}</h3>
-                                <h4>{product.price}$</h4>
-                                <a href="">INFO</a>
-                                <button onClick={() => buyProducts(product)}>Agregar al carrito</button>
-                            </div>
-                        </div>
-                        
-
-                        {/* <div className="item" key={product.id}>
-                            <figure>
-                                <img src={product.img} alt="img-product-card"/>
-                            </figure>
-                            <div class="info-product">
-                                <h3>{product.name}</h3>
-                                <h4>{product.price}$</h4>
-                                <a href="">INFO</a>
-                                <button onClick={() => buyProducts(product)}>Buy</button>
-                            </div>
-                        </div>
-
-
-                        <div className="item" key={product.id}>
-                            <figure>
-                                <img src={product.img} alt="img-product-card"/>
-                            </figure>
-                            <div class="info-product">
-                                <h3>{product.name}</h3>
-                                <h4>{product.price}$</h4>
-                                <a href="">INFO</a>
-                                <button onClick={() => buyProducts(product)}>Buy</button>
-                            </div>
-                        </div>
-
-
-                        <div className="item" key={product.id}>
-                            <figure>
-                                <img src={product.img} alt="img-product-card"/>
-                            </figure>
-                            <div class="info-product">
-                                <h3>{product.name}</h3>
-                                <h4>{product.price}$</h4>
-                                <a href="">INFO</a>
-                                <button onClick={() => buyProducts(product)}>Buy</button>
-                            </div>
-                        </div>
-
-
-                        <div className="item" key={product.id}>
-                            <figure>
-                                <img src={product.img} alt="img-product-card"/>
-                            </figure>
-                            <div class="info-product">
-                                <h3>{product.name}</h3>
-                                <h4>{product.price}$</h4>
-                                <a href="">INFO</a>
-                                <button onClick={() => buyProducts(product)}>Buy</button>
-                            </div>
-                        </div> */}
+    console.log(data1);
+    console.log(data1["products"])
+    return (
+        <div id='bodyMoviles'>
+          <div className="body-items">
+            <div className="container-items">
+              {data1 && data1["products"] ? (
+                data1["products"].map((product) => (
+                  <div className="item" key={product.id}>
+                    <figure>
+                      <img src={product.img} alt="img-product-card"/>
+                    </figure>
+                    <div className="info-product">
+                      <h3>{product.name}</h3>
+                      <h4>{product.price}$</h4>
+                      <a href="">INFO</a>
+                      <button onClick={() => buyProducts(product)}>Agregar al carrito</button>
                     </div>
-                </div>
+                  </div>
+                ))
+              ) : (
+                <p>No hay productos disponibles.</p>
+              )}
             </div>
-        );
-    });
+          </div>
+        </div>
+      );
 };
 
 export default Moviles;
