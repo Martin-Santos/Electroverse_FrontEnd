@@ -4,9 +4,19 @@ import { Link } from 'react-router-dom';
 import TotalItems from '../CartContent/TotalItems';
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+import { styled, lighten, darken } from '@mui/system';
 
 export default function Header() {
 	const { cart } = useContext(dataContext);
+	const options = top100Films.map((option) => {
+		const firstLetter = option.title[0].toUpperCase();
+		return {
+		  firstLetter: /[0-9]/.test(firstLetter) ? '0-9' : firstLetter,
+		  ...option,
+		};
+	});
     return (
 		<div id='body'>
 		
@@ -28,6 +38,20 @@ export default function Header() {
 							<a href=""><i className="fa-solid fa-magnifying-glass"></i></a>
 						</div>
 					</div>
+					<Autocomplete
+						id="grouped-demo"
+						options={options.sort((a, b) => -b.firstLetter.localeCompare(a.firstLetter))}
+						groupBy={(option) => option.firstLetter}
+						getOptionLabel={(option) => option.title}
+						sx={{ width: 300 }}
+						renderInput={(params) => <TextField {...params} label="With categories" />}
+						renderGroup={(params) => (
+							<li key={params.key}>
+							<GroupHeader>{params.group}</GroupHeader>
+							<GroupItems>{params.children}</GroupItems>
+							</li>
+						)}
+					/>
 					
 
 					<div className="container-icon">
