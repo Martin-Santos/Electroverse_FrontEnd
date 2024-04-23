@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import TotalItems from '../CartContent/TotalItems';
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
+import {TextField,Autocomplete} from '@mui/material';
+import { top100Films} from '../header/movies';
 
 
 export default function Header() {
@@ -24,12 +26,21 @@ export default function Header() {
 						</Link>
 					</div>
 
-					<div className="search">
+					{/* <div className="search">
 						<input type="search" placeholder="¿Que desea buscar?" />
 						<div className="icon-search">
 							<a href=""><i className="fa-solid fa-magnifying-glass"></i></a>
 						</div>
-					</div>
+					</div> */}
+					<form className='search'>
+						<Autocomplete
+							disablePortal
+							id="combo-box-demo"
+							options={top100Films}
+							sx={{ width: 300 }}
+							renderInput={(params) => <TextField {...params} label="Products" />}
+						/>
+					</form>
 					
 					
 
