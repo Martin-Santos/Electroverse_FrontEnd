@@ -35,7 +35,7 @@ export default function Header() {
 						<div className="icon-search">
 							<a href=""><i className="fa-solid fa-magnifying-glass"></i></a>
 						</div>
-					</div> */}
+					</div> */ }
 					<form className='search'>
 						<TextField id="pred_features" label="Products" />
 						<TextField id="pred_labels" disabled label="Products" />
