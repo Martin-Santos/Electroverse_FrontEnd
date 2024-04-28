@@ -2,14 +2,18 @@ import './header.css';
 import imglogo from '../../multimedia/imglogo.png';
 import { Link } from 'react-router-dom';
 import TotalItems from '../CartContent/TotalItems';
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { dataContext } from "../Context/DataContext";
 import {TextField,Autocomplete} from '@mui/material';
-import { top100Films} from '../header/movies';
+import { setup } from './Algorithm-predictions/predicts';
 
 
 export default function Header() {
 	const { cart } = useContext(dataContext);
+
+	useEffect(() => {
+		setup();
+	}, []);
 	
     return (
 		<div id='body'>
@@ -33,13 +37,8 @@ export default function Header() {
 						</div>
 					</div> */}
 					<form className='search'>
-						<Autocomplete
-							disablePortal
-							id="combo-box-demo"
-							options={top100Films}
-							sx={{ width: 300 }}
-							renderInput={(params) => <TextField {...params} label="Products" />}
-						/>
+						<TextField id="pred_features" label="Products" />
+						<TextField id="pred_labels" disabled label="Products" />
 					</form>
 					
 					
